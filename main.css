@@ -11,6 +11,7 @@ body{
 }
 
 header {
+    position:fixed;
     height: 70px;
     width: 100%;
     background: black;
@@ -29,6 +30,21 @@ header #logo img{
     border-radius: 8px;
 }
 
+a{
+    text-shadow: 1px 1px black;
+    border: 3px solid green;
+    border-radius: 8px;
+    color: green;
+    padding: 10px 20px; 
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover{
+    transition: 400ms;
+    background-color: black;
+}
+
 .title{
     display: flex;
     flex-direction: column;
@@ -39,24 +55,24 @@ header #logo img{
     margin-top: 15%;
 }
 
-.fundo{
+#Capa{
     background: url(/images/Capa.jpg);
     background-size: cover;
-    height: 100%;
     padding: 5px;
     text-align: center;
+    box-sizing: border-box;
 }
 
-.fundo h1{
+#Capa h1{
     color: green;
     line-height: 0.9;
     text-shadow: 1.5px 1.5px black;
     font-size: 90px;
-    margin: 5% 20% 0 20%;
+    margin: 200px 20% 0 20%;
     padding-bottom: 20px;
 }
 
-.fundo h2{
+#Capa h2{
     text-shadow: 1.5px 1.5px black;
     color: green;
     text-align: center;
@@ -67,12 +83,91 @@ header #logo img{
     margin-bottom: 75px;
 }
 
-.fundo a{
-    text-shadow: 1px 1px black;
-    border: 1px solid green;
+#menu1{
+    width: auto;
+    border: 15px;
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    background: rgb(231, 248, 232);
+}
+
+.coluna{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.txt{
+    flex-direction: column;
+
+}
+
+.txt h2{
+    text-align: center;
+}
+
+.txt h3{
+    font-size: 15px;
+}
+
+.content{
+    display: flex;
+    flex-direction: inline;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+#menu1 iframe{
+    border: 3px double rgb(8, 163, 8);
     border-radius: 8px;
-    color: green;
-    padding: 10px 20px; 
-    text-decoration: none;
-    font-size: 20px;
+    margin-right: 20px;
+    width: 560px;
+    height: 315px;
+}
+
+#menu2{
+    margin-top: 3%;
+    width: auto;
+    border: 15px;
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.exemplo{
+    flex-direction: column;
+}
+
+h3{
+    font-size: 15px;
+}
+
+#menu2 .exemplo{
+    width: 60%;
+    border: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+li{
+    padding-bottom: 7px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#menu2 .metas{
+    font-size: 15px;
+    margin-left: 35px;
+    padding: 73px 10px 10px 10px;
+    border-left: 15px;
+}
+
+#menu2 .metas span{
+    margin-right: 16px;
+    display: flex;
+    background-image: url(./images/export.svg);
+    width: 20px;
+    height: 20px;
 }
