@@ -1,8 +1,8 @@
-html{
+html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@ body{
 }
 
 header {
-    position:fixed;
+    position: fixed;
     height: 70px;
     width: 100%;
     background: black;
@@ -25,37 +25,37 @@ header #logo {
     margin-left: 2%;
 }
 
-header #logo img{
+header #logo img {
     max-height: 100%;
     border-radius: 8px;
 }
 
-a{
+a {
     text-shadow: 1px 1px black;
     border: 3px solid green;
     border-radius: 8px;
     color: green;
-    padding: 10px 20px; 
+    padding: 10px 20px;
     text-decoration: none;
     font-size: 20px;
 }
 
-a:hover{
+a:hover {
     transition: 400ms;
     background-color: black;
 }
 
-.title{
+.title {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-#t1{
+#t1 {
     margin-top: 15%;
 }
 
-#Capa{
+#Capa {
     background: url(/images/Capa.jpg);
     background-size: cover;
     padding: 5px;
@@ -63,7 +63,7 @@ a:hover{
     box-sizing: border-box;
 }
 
-#Capa h1{
+#Capa h1 {
     color: green;
     line-height: 0.9;
     text-shadow: 1.5px 1.5px black;
@@ -72,7 +72,7 @@ a:hover{
     padding-bottom: 20px;
 }
 
-#Capa h2{
+#Capa h2 {
     text-shadow: 1.5px 1.5px black;
     color: green;
     text-align: center;
@@ -83,7 +83,7 @@ a:hover{
     margin-bottom: 75px;
 }
 
-#menu1{
+#menu1 {
     width: auto;
     border: 15px;
     padding: 100px;
@@ -92,32 +92,31 @@ a:hover{
     background: rgb(231, 248, 232);
 }
 
-.coluna{
+.coluna {
     display: flex;
     margin-bottom: 15px;
 }
 
-.txt{
+.txt {
     flex-direction: column;
-
 }
 
-.txt h2{
+.txt h2 {
     text-align: center;
 }
 
-.txt h3{
+.txt h3 {
     font-size: 15px;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: inline;
     text-align: justify;
     margin-bottom: 30px;
 }
 
-#menu1 iframe{
+#menu1 iframe {
     border: 3px double rgb(8, 163, 8);
     border-radius: 8px;
     margin-right: 20px;
@@ -125,7 +124,7 @@ a:hover{
     height: 315px;
 }
 
-#menu2{
+#menu2 {
     margin-top: 3%;
     width: auto;
     border: 15px;
@@ -134,15 +133,15 @@ a:hover{
     text-align: center;
 }
 
-.exemplo{
+.exemplo {
     flex-direction: column;
 }
 
-h3{
+h3 {
     font-size: 15px;
 }
 
-#menu2 .exemplo{
+#menu2 .exemplo {
     width: 60%;
     border: 15px;
     padding: 10px;
@@ -150,21 +149,21 @@ h3{
     text-align: justify;
 }
 
-li{
+li {
     padding-bottom: 7px;
     list-style: none;
     display: flex;
     align-items: center;
 }
 
-#menu2 .metas{
+#menu2 .metas {
     font-size: 15px;
     margin-left: 35px;
     padding: 73px 10px 10px 10px;
     border-left: 15px;
 }
 
-#menu2 .metas span{
+#menu2 .metas span {
     margin-right: 16px;
     display: flex;
     background-image: url(./images/export.svg);
