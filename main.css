@@ -48,22 +48,22 @@ header {
     background: black;
 }
 
-nav{
+nav {
     float: right;
     margin-right: 5px;
 }
 
-header li{
+header li {
     float: left;
 }
 
-header a{
+header a {
     display: flex;
     background-color: black;
     border: 0;
 }
 
-header a:hover{
+header a:hover {
     background-color: lightgreen;
 }
 
@@ -204,7 +204,7 @@ header #logo img {
     text-align: center;
 }
 
-.Mheader{
+.Mheader {
     margin: 0;
     padding: 0;
     background-color: black;
@@ -213,18 +213,18 @@ header #logo img {
     align-items: center;
 }
 
-.Metas2{
+.Metas2 {
     margin: 20px;
     color: green;
     width: 20%;
     text-align: center;
 }
 
-.Metas2:hover{
+.Metas2:hover {
     font-size: 0;
 }
 
-.Metas2:hover:after{
+.Metas2:hover:after {
     transition: 400ms;
     content: attr(data-hover);
     font-size: 15px;
@@ -232,57 +232,56 @@ header #logo img {
     font-weight: 200px;
 }
 
-
 /* Menu4 */
-footer{
+
+footer {
     background-color: black;
     padding: 30px 30px;
-    
 }
 
-footer .footer{
+footer .footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-footer address{
+footer address {
     color: white;
     width: 30%;
     align-items: center;
 }
 
-footer #credito{
+footer #credito {
     width: 30%;
     color: white;
     font-size: 10px;
 }
 
-footer #ods{
+footer #ods {
     width: 30%;
     display: flex;
     align-items: center;
 }
 
-footer #ods p{
+footer #ods p {
     color: white;
     margin-left: 10px;
     text-align: justify;
     font-size: 13px;
 }
 
-footer #ods img{
+footer #ods img {
     width: 130px;
     height: 130px;
     border-radius: 8px;
 }
 
-footer #credito h1{
+footer #credito h1 {
     font-size: 30px;
     text-align: center;
     text-decoration: underline white;
-} 
+}
 
-footer #credito h2{
+footer #credito h2 {
     text-align: justify;
-} 
+}
