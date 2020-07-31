@@ -158,12 +158,13 @@ header #logo img {
 /* Metas */
 
 #menu2 {
+    padding-top: 30px;
     width: auto;
     border: 15px;
     padding: 100px;
     box-sizing: border-box;
     text-align: center;
-    padding-bottom: 53px;
+    padding-bottom: 75px;
 }
 
 #menu2 .txt {
@@ -188,8 +189,8 @@ header #logo img {
     display: flex;
     background-image: url(./images/export.svg);
     background-repeat: no-repeat;
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
 }
 
 /* Menu3 */
@@ -230,3 +231,58 @@ header #logo img {
     font-weight: 28px;
     font-weight: 200px;
 }
+
+
+/* Menu4 */
+footer{
+    background-color: black;
+    padding: 30px 30px;
+    
+}
+
+footer .footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer address{
+    color: white;
+    width: 30%;
+    align-items: center;
+}
+
+footer #credito{
+    width: 30%;
+    color: white;
+    font-size: 10px;
+}
+
+footer #ods{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+footer #ods p{
+    color: white;
+    margin-left: 10px;
+    text-align: justify;
+    font-size: 13px;
+}
+
+footer #ods img{
+    width: 130px;
+    height: 130px;
+    border-radius: 8px;
+}
+
+footer #credito h1{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline white;
+} 
+
+footer #credito h2{
+    text-align: justify;
+} 
