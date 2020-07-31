@@ -1,33 +1,12 @@
-html {
-    font-family: Arial, Helvetica, sans-serif;
-}
+/* Geral */
 
-body {
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
     background-size: 100%;
-}
-
-header {
-    position: fixed;
-    height: 70px;
-    width: 100%;
-    background: black;
-}
-
-header #logo {
-    position: absolute;
-    margin-top: 5px;
-    height: 60px;
-    width: 60px;
-    margin-left: 2%;
-}
-
-header #logo img {
-    max-height: 100%;
-    border-radius: 8px;
 }
 
 a {
@@ -44,6 +23,64 @@ a:hover {
     transition: 400ms;
     background-color: black;
 }
+
+li {
+    padding-bottom: 7px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background: black;
+}
+
+nav{
+    float: right;
+    margin-right: 5px;
+}
+
+header li{
+    float: left;
+}
+
+header a{
+    display: flex;
+    background-color: black;
+    border: 0;
+}
+
+header a:hover{
+    background-color: lightgreen;
+}
+
+header #logo {
+    position: absolute;
+    margin-top: 5px;
+    height: 60px;
+    width: 60px;
+    margin-left: 2%;
+}
+
+header #logo img {
+    max-height: 100%;
+    border-radius: 8px;
+}
+
+/* Capa */
 
 .title {
     display: flex;
@@ -83,6 +120,8 @@ a:hover {
     margin-bottom: 75px;
 }
 
+/* O projeto */
+
 #menu1 {
     width: auto;
     border: 15px;
@@ -101,62 +140,43 @@ a:hover {
     flex-direction: column;
 }
 
-.txt h2 {
-    text-align: center;
-}
-
-.txt h3 {
-    font-size: 15px;
-}
-
 .content {
     display: flex;
     flex-direction: inline;
     text-align: justify;
-    margin-bottom: 30px;
+    margin-bottom: 75px;
 }
 
 #menu1 iframe {
     border: 3px double rgb(8, 163, 8);
     border-radius: 8px;
-    margin-right: 20px;
+    margin-left: 60px;
     width: 560px;
     height: 315px;
 }
 
+/* Metas */
+
 #menu2 {
-    margin-top: 3%;
     width: auto;
     border: 15px;
     padding: 100px;
     box-sizing: border-box;
     text-align: center;
+    padding-bottom: 53px;
 }
 
-.exemplo {
-    flex-direction: column;
-}
-
-h3 {
-    font-size: 15px;
-}
-
-#menu2 .exemplo {
-    width: 60%;
+#menu2 .txt {
+    width: 50%;
     border: 15px;
     padding: 10px;
     box-sizing: border-box;
     text-align: justify;
-}
-
-li {
-    padding-bottom: 7px;
-    list-style: none;
-    display: flex;
-    align-items: center;
+    margin-bottom: 75px;
 }
 
 #menu2 .metas {
+    width: 50%;
     font-size: 15px;
     margin-left: 35px;
     padding: 73px 10px 10px 10px;
@@ -167,6 +187,46 @@ li {
     margin-right: 16px;
     display: flex;
     background-image: url(./images/export.svg);
-    width: 20px;
-    height: 20px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+/* Menu3 */
+
+#menu3 {
+    background: rgb(231, 248, 232);
+    width: auto;
+    border: 15px;
+    padding: 90px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.Mheader{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Metas2{
+    margin: 20px;
+    color: green;
+    width: 20%;
+    text-align: center;
+}
+
+.Metas2:hover{
+    font-size: 0;
+}
+
+.Metas2:hover:after{
+    transition: 400ms;
+    content: attr(data-hover);
+    font-size: 15px;
+    font-weight: 28px;
+    font-weight: 200px;
 }
