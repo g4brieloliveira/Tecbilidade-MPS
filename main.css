@@ -9,7 +9,7 @@ body, html {
     background-size: 100%;
 }
 
-a {
+header a{
     text-shadow: 1px 1px black;
     border: 3px solid green;
     border-radius: 8px;
@@ -19,7 +19,22 @@ a {
     font-size: 20px;
 }
 
-a:hover {
+header a:hover {
+    transition: 400ms;
+    background-color: black;
+}
+
+section .botao{
+    text-shadow: 1px 1px black;
+    border: 3px solid green;
+    border-radius: 8px;
+    color: green;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.botao:hover {
     transition: 400ms;
     background-color: black;
 }
@@ -61,23 +76,35 @@ header a {
     display: flex;
     background-color: black;
     border: 0;
+    color: white;
+    border-radius: 0;
 }
-
+    
 header a:hover {
-    background-color: lightgreen;
+    background-color: green;
 }
 
 header #logo {
+    display: flex;
     position: absolute;
     margin-top: 5px;
     height: 60px;
     width: 60px;
     margin-left: 2%;
+    align-items: center;
 }
 
 header #logo img {
     max-height: 100%;
-    border-radius: 8px;
+}
+
+header #logoimgheader{
+    width: 50px;
+    height: 50px;
+}
+
+header #logotxtheader{
+    height: 70px;
 }
 
 /* Capa */
@@ -201,17 +228,6 @@ header #logo img {
     height: 25px;
 }
 
-/* Menu3 */
-
-#menu3 {
-    background: rgb(231, 248, 232);
-    width: auto;
-    border: 15px;
-    padding: 90px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
 .Mheader {
     margin: 0;
     padding: 0;
@@ -240,7 +256,51 @@ header #logo img {
     font-weight: 200px;
 }
 
-/* Menu4 */
+/* Noticias */
+
+#menu3 {
+    background: rgb(231, 248, 232);
+    width: auto;
+    border: 15px;
+    padding: 100px;
+    padding-top: 60px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.noticias{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 10px;
+}
+
+.noticias li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+}
+
+.noticias li a{
+    text-decoration: none;
+}
+
+.noticias img{
+    width: 250px;
+    height: 127px;
+    border-radius: 8px;
+}
+
+.noticias p{
+    color: black;
+    font-weight: bold;
+}
+
+/* Footer */
 
 footer {
     background-color: black;
