@@ -133,7 +133,7 @@ header #logo img {
 
 .coluna {
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .txt {
@@ -144,7 +144,7 @@ header #logo img {
     display: flex;
     flex-direction: inline;
     text-align: justify;
-    margin-bottom: 75px;
+    margin-bottom: 80px;
 }
 
 #menu1 iframe {
@@ -164,24 +164,32 @@ header #logo img {
     padding: 100px;
     box-sizing: border-box;
     text-align: center;
-    padding-bottom: 75px;
+    padding-bottom: 85px;
 }
 
 #menu2 .txt {
-    width: 50%;
+    width: 40%;
     border: 15px;
     padding: 10px;
     box-sizing: border-box;
     text-align: justify;
-    margin-bottom: 75px;
 }
 
 #menu2 .metas {
-    width: 50%;
+    width: 60%;
     font-size: 15px;
     margin-left: 35px;
     padding: 73px 10px 10px 10px;
     border-left: 15px;
+}
+
+#menu2 .metas .meta{
+    display: flex;
+}
+
+#menu2 .metas li{
+    font-size: 15px;
+    margin-bottom: 22px;
 }
 
 #menu2 .metas span {
@@ -278,10 +286,29 @@ footer #ods img {
 
 footer #credito h1 {
     font-size: 30px;
+    font-weight: 400;
     text-align: center;
     text-decoration: underline white;
 }
 
 footer #credito h2 {
     text-align: justify;
+}
+
+#email {
+    width: 15px;
+}
+
+#whatsapp {
+    width: 15px;
+}
+
+#github {
+    width: 15px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#linkedin {
+    width: 15px;
 }
