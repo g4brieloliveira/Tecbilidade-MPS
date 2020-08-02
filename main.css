@@ -295,20 +295,20 @@ footer #credito h2 {
     text-align: justify;
 }
 
-#email {
+footer address #email {
     width: 15px;
 }
 
-#whatsapp {
+footer address #whatsapp {
     width: 15px;
 }
 
-#github {
+footer address #github {
     width: 15px;
     background-color: white;
     border-radius: 5px;
 }
 
-#linkedin {
+footer address #linkedin {
     width: 15px;
 }
