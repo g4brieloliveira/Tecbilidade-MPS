@@ -376,21 +376,31 @@ footer address #linkedin {
 }
 
 @media(max-width: 900px){
+    #menu1,
+    #menu2,
+    #menu3,
+    #menu4{
+        padding: 30px;
+    }
+
     #Capa{
         width: 100%;
     }
 
     #Capa h1{
         font-size: 50px;
+        text-align: center;
     }
 
     #Capa h2{
-        font-size: 30px;
+        font-size: 20px;
+        text-align: center;
     }
     
     .coluna{
         display: block;
-        margin: 0;
+        width: 100%;
+        margin: 10px auto;
     }
 
     #menu2 .txt{
@@ -412,21 +422,13 @@ footer address #linkedin {
     }
 
     footer address {
-        width: 30%;
+        width: 90%;
         font-size: 13px;
-    }
-    
-    footer #credito {
-        width: 30%;
-        font-size: 7px;
+        text-align: center;
     }
     
     footer #ods {
-        width: 30%;
-    }
-
-    footer #credito h1 {
-        font-size: 15px;
+        width: 90%;
     }
 
     footer #ods img {
@@ -436,12 +438,35 @@ footer address #linkedin {
     }
 
     footer #ods p {
-        font-size: 10px;
+        font-size: 13px;
     }
 
-    header nav a{
-        width: 35px;
-        font-size: 15px;
+    footer #credito {
+        width: 90%;
+        font-size: 7px;
     }
-    
-}   
+
+    footer #credito h1 {
+        font-size: 20px;
+    }
+
+    footer #credito h2{
+        font-size: 13px;
+        text-align: center;
+    }
+
+    footer .footer{
+        display: grid;
+    }
+
+    header #logo {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .menu {
+        visibility: hidden;
+    }
+}
