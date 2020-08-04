@@ -9,7 +9,7 @@ body, html {
     background-size: 100%;
 }
 
-header a{
+header nav a{
     text-shadow: 1px 1px black;
     border: 3px solid green;
     border-radius: 8px;
@@ -19,7 +19,7 @@ header a{
     font-size: 20px;
 }
 
-header a:hover {
+header nav a:hover {
     transition: 400ms;
     background-color: black;
 }
@@ -72,15 +72,16 @@ header li {
     float: left;
 }
 
-header a {
+header nav a {
     display: flex;
     background-color: black;
     border: 0;
     color: white;
-    border-radius: 0;
+    border-radius: 4px;
+    margin-left: 3px;
 }
     
-header a:hover {
+header nav a:hover {
     background-color: green;
 }
 
@@ -359,10 +360,6 @@ footer address #email {
     width: 15px;
 }
 
-footer address #whatsapp {
-    width: 15px;
-}
-
 footer address #github {
     width: 15px;
     background-color: white;
@@ -372,3 +369,79 @@ footer address #github {
 footer address #linkedin {
     width: 15px;
 }
+
+.logos a{
+    text-decoration: none;
+    color: white;
+}
+
+@media(max-width: 900px){
+    #Capa{
+        width: 100%;
+    }
+
+    #Capa h1{
+        font-size: 50px;
+    }
+
+    #Capa h2{
+        font-size: 30px;
+    }
+    
+    .coluna{
+        display: block;
+        margin: 0;
+    }
+
+    #menu2 .txt{
+        width: 100%;
+    }
+
+    #menu2 .metas{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .noticias{
+        grid-template-columns: 1fr;
+    }
+
+    .noticias img{
+        width: 90%;
+        height: 170px;
+    }
+
+    footer address {
+        width: 30%;
+        font-size: 13px;
+    }
+    
+    footer #credito {
+        width: 30%;
+        font-size: 7px;
+    }
+    
+    footer #ods {
+        width: 30%;
+    }
+
+    footer #credito h1 {
+        font-size: 15px;
+    }
+
+    footer #ods img {
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+    }
+
+    footer #ods p {
+        font-size: 10px;
+    }
+
+    header nav a{
+        width: 35px;
+        font-size: 15px;
+    }
+    
+}   
