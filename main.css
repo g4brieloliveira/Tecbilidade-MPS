@@ -3,28 +3,13 @@
 body, html {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 
-header nav a{
-    text-shadow: 1px 1px black;
-    border: 3px solid green;
-    border-radius: 8px;
-    color: green;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 20px;
+#menu1, #menu2, #menu3 {
+    padding: 100px;
 }
 
-header nav a:hover {
-    transition: 400ms;
-    background-color: black;
-}
-
-section .botao{
+.botao {
     text-shadow: 1px 1px black;
     border: 3px solid green;
     border-radius: 8px;
@@ -37,6 +22,18 @@ section .botao{
 .botao:hover {
     transition: 400ms;
     background-color: black;
+}
+
+.coluna {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: inline;
+    text-align: justify;
+    margin-bottom: 80px;
 }
 
 li {
@@ -68,19 +65,24 @@ nav {
     margin-right: 5px;
 }
 
-header li {
+header nav li {
     float: left;
 }
 
-header nav a {
+header nav li a {
     display: flex;
+    text-shadow: 1px 1px black;
+    border: 3px solid green;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
     background-color: black;
     border: 0;
-    color: white;
-    border-radius: 4px;
-    margin-left: 3px;
+    transition: 400ms;
 }
-    
+
 header nav a:hover {
     background-color: green;
 }
@@ -99,26 +101,16 @@ header #logo img {
     max-height: 100%;
 }
 
-header #logoimgheader{
+header #logoimgheader {
     width: 50px;
     height: 50px;
 }
 
-header #logotxtheader{
+header #logotxtheader {
     height: 70px;
 }
 
 /* Capa */
-
-.title {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-#t1 {
-    margin-top: 15%;
-}
 
 #Capa {
     background: url(/images/Capa.jpg);
@@ -128,19 +120,22 @@ header #logotxtheader{
     box-sizing: border-box;
 }
 
-#Capa h1 {
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     color: green;
-    line-height: 0.9;
     text-shadow: 1.5px 1.5px black;
+}
+
+#Capa h1 {
+    line-height: 0.9;
     font-size: 90px;
     margin: 200px 20% 0 20%;
     padding-bottom: 20px;
 }
 
 #Capa h2 {
-    text-shadow: 1.5px 1.5px black;
-    color: green;
-    text-align: center;
     padding-top: 20px;
     margin: 0 30% 0 30%;
     border-top: 3px solid green;
@@ -153,26 +148,13 @@ header #logotxtheader{
 #menu1 {
     width: auto;
     border: 15px;
-    padding: 100px;
     box-sizing: border-box;
     text-align: center;
     background: rgb(231, 248, 232);
 }
 
-.coluna {
-    display: flex;
-    margin-bottom: 10px;
-}
-
-.txt {
+#menu1 .coluna .txt {
     flex-direction: column;
-}
-
-.content {
-    display: flex;
-    flex-direction: inline;
-    text-align: justify;
-    margin-bottom: 80px;
 }
 
 #menu1 iframe {
@@ -191,8 +173,8 @@ header #logotxtheader{
     border: 15px;
     padding: 100px;
     box-sizing: border-box;
-    text-align: center;
     padding-bottom: 85px;
+    text-align: center;
 }
 
 #menu2 .txt {
@@ -205,40 +187,36 @@ header #logotxtheader{
 
 #menu2 .metas {
     width: 60%;
-    font-size: 15px;
     margin-left: 35px;
-    padding: 73px 10px 10px 10px;
-    border-left: 15px;
+    padding: 75px 10px 10px 10px;
 }
 
-#menu2 .meta{
+#menu2 .meta {
     display: flex;
 }
 
-#menu2 .metas li{
+#menu2 .metas li {
     font-size: 15px;
     margin-bottom: 22px;
 }
 
 #menu2 .metas span {
     margin-right: 16px;
-    display: flex;
     background-image: url(./images/export.svg);
     background-repeat: no-repeat;
     width: 25px;
     height: 25px;
 }
 
-.Mheader {
+#Mheader {
     margin: 0;
     padding: 0;
     background-color: black;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.Metas2 {
+#Mheader .Metas2 {
     margin: 20px;
     color: green;
     width: 20%;
@@ -261,42 +239,35 @@ header #logotxtheader{
 
 #menu3 {
     background: rgb(231, 248, 232);
-    width: auto;
-    border: 15px;
-    padding: 100px;
     padding-top: 60px;
     box-sizing: border-box;
     text-align: center;
 }
 
-.noticias{
+#menu3 .noticias {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 16px;
-    margin-bottom: 10px;
 }
 
-.noticias li{
+.noticias li {
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-between;
     text-align: center;
     cursor: pointer;
 }
 
-.noticias li a{
+.noticias li a {
     text-decoration: none;
 }
 
-.noticias img{
+.noticias img {
     width: 250px;
     height: 127px;
     border-radius: 8px;
 }
 
-.noticias p{
+.noticias p {
     color: black;
     font-weight: bold;
 }
@@ -305,25 +276,28 @@ header #logotxtheader{
 
 footer {
     background-color: black;
-    padding: 30px 30px;
+    padding: 30px;
 }
 
 footer .footer {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-
-footer address {
-    color: white;
-    width: 30%;
-    align-items: center;
 }
 
 footer #credito {
     width: 30%;
     color: white;
-    font-size: 10px;
+}
+
+footer #credito h1 {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline white;
+}
+
+footer #credito h2 {
+    text-align: justify;
+    font-size: 15px;
 }
 
 footer #ods {
@@ -335,8 +309,6 @@ footer #ods {
 footer #ods p {
     color: white;
     margin-left: 10px;
-    text-align: justify;
-    font-size: 13px;
 }
 
 footer #ods img {
@@ -345,15 +317,9 @@ footer #ods img {
     border-radius: 8px;
 }
 
-footer #credito h1 {
-    font-size: 30px;
-    font-weight: 400;
-    text-align: center;
-    text-decoration: underline white;
-}
-
-footer #credito h2 {
-    text-align: justify;
+footer address {
+    color: white;
+    width: 30%;
 }
 
 footer address #email {
@@ -370,103 +336,93 @@ footer address #linkedin {
     width: 15px;
 }
 
-.logos a{
+.logos a {
     text-decoration: none;
     color: white;
 }
 
-@media(max-width: 900px){
-    #menu1,
-    #menu2,
-    #menu3,
-    #menu4{
+@media(max-width: 900px) {
+    #menu1, #menu2, #menu3, #menu4 {
         padding: 30px;
     }
-
-    #Capa{
-        width: 100%;
+    .menu {
+        visibility: hidden;
     }
-
-    #Capa h1{
-        font-size: 50px;
-        text-align: center;
-    }
-
-    #Capa h2{
-        font-size: 20px;
-        text-align: center;
-    }
-    
-    .coluna{
+    .coluna {
         display: block;
         width: 100%;
         margin: 10px auto;
     }
-
-    #menu2 .txt{
-        width: 100%;
-    }
-
-    #menu2 .metas{
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .noticias{
-        grid-template-columns: 1fr;
-    }
-
-    .noticias img{
-        width: 90%;
-        height: 170px;
-    }
-
-    footer address {
-        width: 90%;
-        font-size: 13px;
-        text-align: center;
-    }
-    
-    footer #ods {
-        width: 90%;
-    }
-
-    footer #ods img {
-        width: 80px;
-        height: 80px;
-        border-radius: 8px;
-    }
-
-    footer #ods p {
-        font-size: 13px;
-    }
-
-    footer #credito {
-        width: 90%;
-        font-size: 7px;
-    }
-
-    footer #credito h1 {
-        font-size: 20px;
-    }
-
-    footer #credito h2{
-        font-size: 13px;
-        text-align: center;
-    }
-
-    footer .footer{
-        display: grid;
-    }
-
     header #logo {
         justify-content: center;
         align-items: center;
         width: 100%;
         margin-left: 0px;
     }
-
-    .menu {
-        visibility: hidden;
+    #Capa #initialtxt {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    #Capa h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    #Capa h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    #menu1 iframe {
+        margin-left: 0;
+        height: 15rem;
+    }
+    #menu2 .txt {
+        width: 100%;
+    }
+    #menu2 .metas {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    #menu3 .noticias {
+        grid-template-columns: 1fr;
+    }
+    #menu3 .noticias img {
+        width: 100%;
+        height: 170px;
+    }
+    footer .footer {
+        display: block;
+    }
+    footer address {
+        width: 100%;
+        font-size: 13px;
+        text-align: center;
+        margin-top: 15px;
+    }
+    footer #ods {
+        width: 100%;
+        padding-bottom: 5px;
+        border-bottom: 1px solid white;
+    }
+    footer #ods img {
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+    }
+    footer #ods p {
+        font-size: 13px;
+    }
+    footer #credito {
+        width: 100%;
+        font-size: 7px;
+        border-bottom: 1px solid white;
+    }
+    footer #credito h1 {
+        font-size: 20px;
+    }
+    footer #credito h2 {
+        font-size: 13px;
+        text-align: center;
     }
 }
