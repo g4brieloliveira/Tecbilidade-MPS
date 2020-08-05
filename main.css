@@ -30,6 +30,7 @@ body, html {
 }
 
 .content {
+    width: 50%;
     display: flex;
     flex-direction: inline;
     text-align: justify;
@@ -151,6 +152,7 @@ header #logotxtheader {
     box-sizing: border-box;
     text-align: center;
     background: rgb(231, 248, 232);
+    padding-bottom: 120px;
 }
 
 #menu1 .coluna .txt {
@@ -168,12 +170,10 @@ header #logotxtheader {
 /* Metas */
 
 #menu2 {
-    padding-top: 30px;
     width: auto;
     border: 15px;
-    padding: 100px;
     box-sizing: border-box;
-    padding-bottom: 85px;
+    padding-bottom: 55px;
     text-align: center;
 }
 
@@ -210,8 +210,8 @@ header #logotxtheader {
 
 #Mheader {
     margin: 0;
-    padding: 0;
-    background-color: black;
+    padding: 0px;
+    background-color: #000000;
     display: flex;
     align-items: center;
 }
@@ -223,6 +223,11 @@ header #logotxtheader {
     text-align: center;
 }
 
+.Metas2{
+    white-space: pre-line;
+    font-weight: bold;
+}
+
 .Metas2:hover {
     font-size: 0;
 }
@@ -231,6 +236,7 @@ header #logotxtheader {
     transition: 400ms;
     content: attr(data-hover);
     font-size: 15px;
+    font-weight: bold;
     font-weight: 28px;
     font-weight: 200px;
 }
@@ -245,16 +251,16 @@ header #logotxtheader {
 }
 
 #menu3 .noticias {
+    justify-content: center;
+    align-items: baseline;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 16px;
 }
 
 .noticias li {
-    list-style: none;
-    justify-content: space-between;
-    text-align: center;
     cursor: pointer;
+    display: block;
 }
 
 .noticias li a {
@@ -353,6 +359,16 @@ footer address #linkedin {
         width: 100%;
         margin: 10px auto;
     }
+    .content {
+        width: 100%;
+        justify-content: center;
+    }
+    .botao {
+        visibility: hidden;
+    }
+    #Mheader {
+        visibility: hidden;
+    }
     header #logo {
         justify-content: center;
         align-items: center;
@@ -365,6 +381,7 @@ footer address #linkedin {
         width: 100%;
     }
     #Capa h1 {
+        padding-top: 50px;
         font-size: 40px;
         text-align: center;
     }
@@ -372,9 +389,15 @@ footer address #linkedin {
         font-size: 20px;
         text-align: center;
     }
+    #menu1 {
+        padding-top: 50px;
+    }
     #menu1 iframe {
         margin-left: 0;
         height: 15rem;
+    }
+    #menu1 .coluna .txt {
+        width: 100%;
     }
     #menu2 .txt {
         width: 100%;
@@ -383,6 +406,9 @@ footer address #linkedin {
         width: 100%;
         margin: 0;
         box-sizing: border-box;
+    }
+    #menu3 {
+        padding-top: 50px;
     }
     #menu3 .noticias {
         grid-template-columns: 1fr;
