@@ -389,7 +389,9 @@ footer address #linkedin {
 }
 
 header label img{
-    width: 40px;
+    display: flex;
+    align-items: center;
+    width: 33px;
 }
 
 header #check{
@@ -410,7 +412,6 @@ header #check{
 
     header{
         width: 100%;
-        align-items: center;
     }
 
     header #logo{
@@ -420,7 +421,7 @@ header #check{
 
     header #icone{
         cursor: pointer;
-        padding: 15px;
+        padding: 17px;
         position: absolute;
         z-index: 1;
     }
@@ -443,12 +444,16 @@ header #check{
     .barra nav a{
         text-decoration: none;
     }
+    header .barra #separei{
+        margin-top: 10px;
+    }
     
     header .barra .link{
         background-color: gray;
         padding: 20px;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 12pt;
+        font-size: 15px;
+        font-weight: 500;
         transition: 0.2s linear;
         color: white;
         border-bottom: 2px solid black;
@@ -456,7 +461,7 @@ header #check{
     }
     
     .barra .link:hover{
-        background-color: lightgrey;
+        background-color: green;
     }
     
     header #check:checked ~ .barra{
