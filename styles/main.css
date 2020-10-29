@@ -98,7 +98,7 @@ header #navbarNav a {
 
 .content {
   width: 100%;
-  height: 55vh;
+  height: 50%;
 }
 
 #menu2 .text {
@@ -188,6 +188,7 @@ header #navbarNav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1.3rem;
 
   text-align: justify;
 }
